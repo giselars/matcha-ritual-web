@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Ribbon from '../components/Ribbon.astro';
+import Essence from '../components/Essence.astro';
+import Ritual from '../components/Ritual.astro';
+import Collection from '../components/Collection.astro';
+import Pause from '../components/Pause.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+import ProductDialog from '../components/ProductDialog.astro';
+---
+<Layout>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <Header />
+  <main id="contenido">
+    <Hero />
+    <Ribbon />
+    <Essence />
+    <Ritual />
+    <Collection />
+    <Pause />
+    <FAQ />
+  </main>
+  <Footer />
+  <ProductDialog />
+</Layout>
+
+<script>
+  import "../scripts/landing.js";
+  import "../scripts/motion.js";
+</script>

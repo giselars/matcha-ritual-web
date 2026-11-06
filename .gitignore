@@ -1,0 +1,23 @@
+# Dependencias y archivos generados por Astro
+node_modules/
+dist/
+.astro/
+
+# Variables de entorno locales (conservar plantillas)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs y cachés locales
+*.log
+.pnpm-store/
+.cache/
+*.tsbuildinfo
+
+# Archivos del sistema y temporales del editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

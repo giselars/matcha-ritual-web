@@ -1,0 +1,28 @@
+<section class="intro-section section" id="matcha">
+        <p class="eyebrow">01 / LA ESENCIA</p>
+        <div>
+          <h2>Hay momentos que<br />merecen <em>su tiempo.</em></h2>
+          <div class="intro-bottom">
+            <span class="essence-seal" aria-hidden="true"><i class="icon icon-sprout"></i></span>
+            <p>
+              El verde intenso. El roce del bambú. La primera espuma. El matcha
+              es una invitación a estar aquí: a encontrar belleza en lo sencillo
+              y disfrutar de cada pequeño gesto.
+            </p>
+          </div>
+        </div>
+      </section>
+
+<script>
+  const seal = document.querySelector('.essence-seal');
+  if (seal) {
+    let visible = false;
+    const update = () => seal.classList.toggle('is-in-view', visible && !document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      update();
+    }, { threshold: 0.2 });
+    observer.observe(seal);
+    document.addEventListener('visibilitychange', update);
+  }
+</script>
